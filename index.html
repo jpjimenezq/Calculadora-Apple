@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Apple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="Titulo">Calculadora Apple</h1>
+    </header>
+
+    <main>
+        <section class="pantalla">
+            <div>
+                <h2 id="pantalla"></h2>
+            </div>
+        </section>
+
+        <section class="botones">
+            <div>
+                <button class="boton-blanco" onclick="limpiarPantalla()">A/C</button>
+                <button class="boton-blanco" onclick="cambiarSigno()">+/-</button>
+                <button class="boton-blanco" onclick="agregarPorcentaje()">%</button>
+                <button class="boton-naranja" onclick="agregarOperador('÷')">÷</button>
+            </div>
+
+            <div>
+                <button class="boton-gris" onclick="agregarDigito(7)">7</button>
+                <button class="boton-gris" onclick="agregarDigito(8)">8</button>
+                <button class="boton-gris" onclick="agregarDigito(9)">9</button>
+                <button class="boton-naranja" onclick="agregarOperador('X')">X</button>
+            </div>
+
+            <div>
+                <button class="boton-gris" onclick="agregarDigito(4)">4</button>
+                <button class="boton-gris" onclick="agregarDigito(5)">5</button>
+                <button class="boton-gris" onclick="agregarDigito(6)">6</button>
+                <button class="boton-naranja" onclick="agregarOperador('-')">-</button>
+            </div>
+
+            <div>
+                <button class="boton-gris" onclick="agregarDigito(1)">1</button>
+                <button class="boton-gris" onclick="agregarDigito(2)">2</button>
+                <button class="boton-gris" onclick="agregarDigito(3)">3</button>
+                <button class="boton-naranja" onclick="agregarOperador('+')">+</button>
+            </div>
+
+            <div>
+                <button class="boton-gris-big" onclick="agregarDigito(0)">0</button>
+                <button class="boton-gris" onclick="agregarDecimal()">,</button>
+                <button class="boton-naranja" onclick="calcularResultado()">=</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
